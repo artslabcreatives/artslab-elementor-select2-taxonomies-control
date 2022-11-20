@@ -20,7 +20,9 @@ jobs:
       run: mv elementor-select2-taxonomies-control-artslab2.zip updates/elementor-select2-taxonomies-control-artslab.zip
     - name: Release activities
       run: rm updates/update.json
+    - name: Release activities
       run: cp updates/update-template.json updates/update.json
+    - name: Release activities
       run: sed -i 's/_VERSION_/3.0/' updates/update.json
     - name: Bump version and push tag
       uses: anothrNick/github-tag-action@master
