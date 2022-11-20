@@ -15,7 +15,7 @@ We are a digital media agency that believes, through proper strategy formulation
 Introducing a WordPress website builder, with no limits of design. A website builder that delivers high-end page designs and advanced capabilities, never before seen on WordPress.
 
 <p align="center">
-<a href="">[![MasterDeployCI](https://github.com/artslabcreatives/artslab-elementor-select2-taxonomies-control/actions/workflows/master.yml/badge.svg)](https://github.com/artslabcreatives/artslab-elementor-select2-taxonomies-control/actions/workflows/master.yml)</a>
+<a href=""><img alt="" src="https://github.com/artslabcreatives/artslab-elementor-select2-taxonomies-control/actions/workflows/master.yml/badge.svg"></a>
 <a href=""><img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/artslabcreatives/artslab-elementor-select2-taxonomies-control"></a>
 <a href=""><img alt="GitHub" src="https://img.shields.io/github/license/artslabcreatives/artslab-elementor-select2-taxonomies-control"></a>
 <a href=""><img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/artslabcreatives/artslab-elementor-select2-taxonomies-control"></a>
