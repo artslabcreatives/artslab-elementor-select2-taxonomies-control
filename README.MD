@@ -16,10 +16,10 @@ Introducing a WordPress website builder, with no limits of design. A website bui
 
 <p align="center">
 <a href="https://www.travis-ci.com/artslabcreatives/demoartslab"><img src="https://www.travis-ci.com/artslabcreatives/demoartslab.svg?token=4xH2xquRqoL8En2ih4LX&branch=master" alt="Build Status"></a>
-<a href=""><img alt="GitHub code size in bytes" src="https://badges.artslabcreatives.com:89/github/languages/code-size/artslabcreatives/demoartslab"></a>
-<a href=""><img alt="GitHub" src="https://badges.artslabcreatives.com:89/github/license/artslabcreatives/demoartslab"></a>
-<a href=""><img alt="GitHub tag (latest by date)" src="https://badges.artslabcreatives.com:89/github/v/tag/artslabcreatives/demoartslab?label=version"></a>
-<a href=""><img alt="GitHub release (latest by date)" src="https://badges.artslabcreatives.com:89/github/v/release/artslabcreatives/demoartslab"></a>
+<a href=""><img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/artslabcreatives/demoartslab"></a>
+<a href=""><img alt="GitHub" src="https://img.shields.io/github/license/artslabcreatives/demoartslab"></a>
+<a href=""><img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/artslabcreatives/demoartslab?label=version"></a>
+<a href=""><img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/artslabcreatives/demoartslab"></a>
 
 [![MasterDeployCI](https://github.com/artslabcreatives/artslab-elementor-select2-taxonomies-control/actions/workflows/master.yml/badge.svg)](https://github.com/artslabcreatives/artslab-elementor-select2-taxonomies-control/actions/workflows/master.yml)
 
