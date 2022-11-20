@@ -18,8 +18,12 @@ jobs:
       run: rm elementor-select2-taxonomies-control-artslab.zip
     - name: Zip Rename
       run: mv elementor-select2-taxonomies-control-artslab2.zip elementor-select2-taxonomies-control-artslab.zip
-    - name: Nested Zip
-      run: echo "Created initial release"
+    - name: Make release directory
+      run: mkdir ./release
+    - name: Move zip to release directory
+      run: mv elementor-select2-taxonomies-control-artslab.zip ./release/elementor-select2-taxonomies-control-artslab.zip
+    - name: Set current directory to release directory
+      run: cd ./release
     - name: Bump version and push tag
       uses: anothrNick/github-tag-action@master
       env:
