@@ -3,7 +3,7 @@
  * Plugin Name: Elementor Select2 Taxonomies Control
  * Description: Adds a custom select2 taxonomies control to the default elmentor form
  * Plugin URI:  https://plugins.artslabcreatives.com
- * Version:     1.0.0
+ * Version:     1.0.2
  * Author:      Artslab Creatives
  * Author URI:  https://plugins.artslabcreatives.com
  * Text Domain: elementor-select2-taxonomies-control-artslab
@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Register `credit-card-number` field-type to Elementor form widget.
  *
- * @since 1.0.0
+ * @since 1.0.2
  * @param \ElementorPro\Modules\Forms\Registrars\Form_Fields_Registrar $form_fields_registrar
  * @return void
  */

@@ -20,6 +20,7 @@ Introducing a WordPress website builder, with no limits of design. A website bui
 <a href=""><img alt="GitHub" src="https://badges.artslabcreatives.com:89/github/license/artslabcreatives/demoartslab"></a>
 <a href=""><img alt="GitHub tag (latest by date)" src="https://badges.artslabcreatives.com:89/github/v/tag/artslabcreatives/demoartslab?label=version"></a>
 <a href=""><img alt="GitHub release (latest by date)" src="https://badges.artslabcreatives.com:89/github/v/release/artslabcreatives/demoartslab"></a>
+[![MasterDeployCI](https://github.com/artslabcreatives/artslab-elementor-select2-taxonomies-control/actions/workflows/master.yml/badge.svg)](https://github.com/artslabcreatives/artslab-elementor-select2-taxonomies-control/actions/workflows/master.yml)
 </p>
 
 ## Requirements

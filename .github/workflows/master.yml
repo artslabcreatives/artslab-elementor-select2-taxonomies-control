@@ -1,0 +1,47 @@
+name: MasterDeployCI
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+    - name: Updates Folder Zip Delete
+      run: rm -f updates/elementor-select2-taxonomies-control-artslab.zip
+    - name: Zip Folder
+      run: zip -r elementor-select2-taxonomies-control-artslab.zip . -x ".git/*" ".github/*"
+    - name: Initial Zip
+      run: echo "Created initial zip"
+    - name: Zip the Zip
+      run: zip -r elementor-select2-taxonomies-control-artslab2.zip ./elementor-select2-taxonomies-control-artslab.zip
+    - name: First Zip Delete
+      run: rm elementor-select2-taxonomies-control-artslab.zip
+    - name: Zip Rename
+      run: mv elementor-select2-taxonomies-control-artslab2.zip updates/elementor-select2-taxonomies-control-artslab.zip
+    - name: Remove existing update.json
+      run: rm updates/update.json
+    - name: 'Get Previous tag'
+      id: previoustag
+      uses: "WyriHaximus/github-action-get-previous-tag@v1"
+      env:
+        GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+      with:
+        fallback: 1.0.0
+    - name: 'Get next minor version'
+      id: semvers
+      uses: "WyriHaximus/github-action-next-semvers@v1"
+      with:
+        version: ${{ steps.previoustag.outputs.tag }}
+    - name: Create copy of update.json using template
+      run: cp updates/update-template.json updates/update.json
+    - name: Replace version in update.json
+      run: sed -i 's/_VERSION_/${{steps.semvers.outputs.patch}}/' updates/update.json
+    - name: Replace version in plugin php file
+      run: sed -i 's/${{ steps.previoustag.outputs.tag }}/${{steps.semvers.outputs.patch}}/' elementor-select2-taxonomies-control-artslab.php
+    - uses: EndBug/add-and-commit@v9
+      with:
+        tag: "${{steps.semvers.outputs.patch}}"
