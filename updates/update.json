@@ -1,0 +1,21 @@
+{
+	"name" : "Elementor Select2 Taxonomies Control",
+	"slug" : "elementor-select2-taxonomies-control-artslab",
+	"author" : "<a href='https://artslabcreatives.com'>Miyuru Dharmage</a>",
+	"author_profile" : "http://profiles.wordpress.org/voxsar",
+	"version" : "2.0",
+	"download_url" : "https://plugins.artslabcreatives.com/elementor-select2-taxonomies-control-artslab/updates/elementor-select2-taxonomies-control-artslab.zip",
+	"requires" : "3.0",
+	"tested" : "5.8",
+	"requires_php" : "5.3",
+	"last_updated" : "2021-01-30 02:10:00",
+	"sections" : {
+		"description" : "Adds a custom select2 control to the default elmentor form",
+		"installation" : "Click the activate button and that's it.",
+		"changelog" : "<h4>1.0 –  1 august 2021</h4><ul><li>Bug fixes.</li><li>Initital release.</li></ul>"
+	},
+	"banners" : {
+		"low" : "https://plugins.artslabcreatives.com/banner-772x250.jpg",
+		"high" : "https://plugins.artslabcreatives.com/banner-1544x500.jpg"
+	}
+}
