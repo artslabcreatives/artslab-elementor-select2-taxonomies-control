@@ -16,14 +16,17 @@ jobs:
       run: zip -r elementor-select2-taxonomies-control-artslab2.zip ./elementor-select2-taxonomies-control-artslab.zip
     - name: First Zip Delete
       run: rm elementor-select2-taxonomies-control-artslab.zip
+    - name: Updates Folder Zip Delete
+      run: rm updates/elementor-select2-taxonomies-control-artslab.zip
     - name: Zip Rename
       run: mv elementor-select2-taxonomies-control-artslab2.zip updates/elementor-select2-taxonomies-control-artslab.zip
-    - name: Release activities
+    - name: Remove existing update.json
       run: rm updates/update.json
-    - name: Release activities
+    - name: Create copy of update.json using template
       run: cp updates/update-template.json updates/update.json
-    - name: Release activities
+    - name: Replace version in update.json
       run: sed -i 's/_VERSION_/3.0/' updates/update.json
+    - uses: EndBug/add-and-commit@v9
     - name: Bump version and push tag
       uses: anothrNick/github-tag-action@master
       env:
