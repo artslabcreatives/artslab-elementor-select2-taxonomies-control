@@ -12,8 +12,12 @@ jobs:
       run: zip -r elementor-select2-taxonomies-control-artslab.zip . -x ".git/*" ".github/*"
     - name: Initial Zip
       run: echo "Created initial zip"
-    - name: Zip Zip
-      run: zip -r elementor-select2-taxonomies-control-artslab.zip ./elementor-select2-taxonomies-control-artslab.zip
+    - name: Zip the Zip
+      run: zip -r elementor-select2-taxonomies-control-artslab2.zip ./elementor-select2-taxonomies-control-artslab.zip
+    - name: First Zip Delete
+      run: rm elementor-select2-taxonomies-control-artslab.zip
+    - name: Zip Rename
+      run: mv elementor-select2-taxonomies-control-artslab2.zip elementor-select2-taxonomies-control-artslab.zip
     - name: Nested Zip
       run: echo "Created initial release"
     - name: Bump version and push tag
