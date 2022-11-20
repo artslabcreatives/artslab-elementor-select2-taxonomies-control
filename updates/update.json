@@ -3,7 +3,7 @@
 	"slug" : "elementor-select2-taxonomies-control-artslab",
 	"author" : "<a href='https://artslabcreatives.com'>Miyuru Dharmage</a>",
 	"author_profile" : "http://profiles.wordpress.org/voxsar",
-	"version" : "2.0",
+	"version" : "3.0",
 	"download_url" : "https://plugins.artslabcreatives.com/elementor-select2-taxonomies-control-artslab/updates/elementor-select2-taxonomies-control-artslab.zip",
 	"requires" : "3.0",
 	"tested" : "5.8",
@@ -15,7 +15,7 @@
 		"changelog" : "<h4>1.0 –  1 august 2021</h4><ul><li>Bug fixes.</li><li>Initital release.</li></ul>"
 	},
 	"banners" : {
-		"low" : "https://plugins.artslabcreatives.com/banner-772x250.jpg",
+		"low" : "https://plugins.artslabcreatives.com/banner-772xha.jpg",
 		"high" : "https://plugins.artslabcreatives.com/banner-1544x500.jpg"
 	}
 }
