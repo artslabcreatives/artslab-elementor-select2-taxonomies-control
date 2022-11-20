@@ -36,5 +36,4 @@ jobs:
       run: cp updates/update-template.json updates/update.json
     - name: Replace version in update.json
       run: sed -i 's/_VERSION_/${{ steps.previoustag.outputs.tag }}/' updates/update.json
-    - name: d
     - uses: EndBug/add-and-commit@v9
