@@ -1,6 +1,6 @@
-# Elementor Select2 Control
+# Elementor Select2 Taxonomies Control
 
-Adds a custom select2 control to the default elmentor form
+Adds a custom select2 taxonomies control to the default elmentor form, where you can select taxonomies
 
 <p align="center"><a href="https://artslabcreatives.com" target="_blank"><img src="https://artslabcreatives.com/wp-content/uploads/2020/04/Dark-1-e1586270633179.png" width="400"></a></p>
 
