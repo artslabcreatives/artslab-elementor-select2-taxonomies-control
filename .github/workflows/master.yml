@@ -44,4 +44,4 @@ jobs:
       run: sed -i 's/${{ steps.previoustag.outputs.tag }}/${{steps.semvers.outputs.patch}}/' elementor-select2-taxonomies-control-artslab.php
     - uses: EndBug/add-and-commit@v9
       with:
-        tag: "${{steps.semvers.outputs.patch}}"
+        tag: "${{steps.semvers.outputs.minor}}"
