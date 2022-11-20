@@ -8,6 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+    - name: Updates Folder Zip Delete
+      run: rm -f updates/elementor-select2-taxonomies-control-artslab.zip
     - name: Zip Folder
       run: zip -r elementor-select2-taxonomies-control-artslab.zip . -x ".git/*" ".github/*"
     - name: Initial Zip
@@ -16,8 +20,6 @@ jobs:
       run: zip -r elementor-select2-taxonomies-control-artslab2.zip ./elementor-select2-taxonomies-control-artslab.zip
     - name: First Zip Delete
       run: rm elementor-select2-taxonomies-control-artslab.zip
-    - name: Updates Folder Zip Delete
-      run: rm -f updates/elementor-select2-taxonomies-control-artslab.zip
     - name: Zip Rename
       run: mv elementor-select2-taxonomies-control-artslab2.zip updates/elementor-select2-taxonomies-control-artslab.zip
     - name: Remove existing update.json
