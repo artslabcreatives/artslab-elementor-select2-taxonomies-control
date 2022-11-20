@@ -39,9 +39,9 @@ jobs:
     - name: Create copy of update.json using template
       run: cp updates/update-template.json updates/update.json
     - name: Replace version in update.json
-      run: sed -i 's/_VERSION_/${{ steps.previoustag.outputs.tag }}/' updates/update.json
+      run: sed -i 's/_VERSION_/${{steps.semvers.outputs.patch}}/' updates/update.json
     - name: Replace version in plugin php file
-      run: sed -i 's/${{ steps.previoustag.outputs.tag }}/${{ steps.previoustag.outputs.tag }}/' elementor-select2-taxonomies-control-artslab.php
+      run: sed -i 's/${{ steps.previoustag.outputs.tag }}/${{steps.semvers.outputs.patch}}/' elementor-select2-taxonomies-control-artslab.php
     - uses: EndBug/add-and-commit@v9
       with:
-        tag: "${{ steps.previoustag.outputs.tag }}"
+        tag: "${{steps.semvers.outputs.patch}}"
