@@ -22,13 +22,22 @@ jobs:
       run: mv elementor-select2-taxonomies-control-artslab2.zip updates/elementor-select2-taxonomies-control-artslab.zip
     - name: Remove existing update.json
       run: rm updates/update.json
+    - name: 'Get Previous tag'
+      id: previoustag
+      uses: "WyriHaximus/github-action-get-previous-tag@v1"
+      env:
+        GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+    - name: 'Get next minor version'
+      id: semvers
+      uses: "WyriHaximus/github-action-next-semvers@v1"
+      with:
+        version: ${{ steps.previoustag.outputs.tag }}
     - name: Create copy of update.json using template
       run: cp updates/update-template.json updates/update.json
     - name: Replace version in update.json
-      run: sed -i 's/_VERSION_/3.0/' updates/update.json
+      run: sed -i 's/_VERSION_/${{ steps.previoustag.outputs.tag }}/' updates/update.json
     - uses: EndBug/add-and-commit@v9
     - name: Bump version and push tag
-      uses: anothrNick/github-tag-action@master
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         REPO_OWNER: voxsar
