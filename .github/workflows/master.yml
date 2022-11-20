@@ -17,7 +17,7 @@ jobs:
     - name: First Zip Delete
       run: rm elementor-select2-taxonomies-control-artslab.zip
     - name: Updates Folder Zip Delete
-      run: rm updates/elementor-select2-taxonomies-control-artslab.zip
+      run: rm -f updates/elementor-select2-taxonomies-control-artslab.zip
     - name: Zip Rename
       run: mv elementor-select2-taxonomies-control-artslab2.zip updates/elementor-select2-taxonomies-control-artslab.zip
     - name: Remove existing update.json
