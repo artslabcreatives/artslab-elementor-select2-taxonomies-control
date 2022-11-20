@@ -41,3 +41,5 @@ jobs:
     - name: Replace version in plugin php file
       run: sed -i 's/${{ steps.previoustag.outputs.tag }}/${{ steps.previoustag.outputs.tag }}/' elementor-select2-taxonomies-control-artslab.php
     - uses: EndBug/add-and-commit@v9
+      with:
+        tag: "${{ steps.previoustag.outputs.tag }}"
