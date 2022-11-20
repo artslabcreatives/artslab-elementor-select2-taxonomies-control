@@ -19,7 +19,6 @@ Introducing a WordPress website builder, with no limits of design. A website bui
 <a href=""><img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/artslabcreatives/artslab-elementor-select2-taxonomies-control"></a>
 <a href=""><img alt="GitHub" src="https://img.shields.io/github/license/artslabcreatives/artslab-elementor-select2-taxonomies-control"></a>
 <a href=""><img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/artslabcreatives/artslab-elementor-select2-taxonomies-control"></a>
-<a href=""><img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/artslabcreatives/artslab-elementor-select2-taxonomies-control"></a>
 </p>
 
 
